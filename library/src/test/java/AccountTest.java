@@ -1,6 +1,6 @@
 import com.thoughtworks.step.bank.Account;
 import com.thoughtworks.step.bank.AccountNumberException;
-import com.thoughtworks.step.bank.MinimumBalanceException;
+import com.thoughtworks.step.bank.InsufficientBalanceException;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ public class AccountTest {
     private Account account;
 
     @Before
-    public void setup() throws MinimumBalanceException, AccountNumberException {
+    public void setup() throws InsufficientBalanceException, AccountNumberException {
         account = new Account("1234-3456",1500);
     }
 
@@ -21,7 +21,7 @@ public class AccountTest {
     }
 
     @Test(expected = AccountNumberException.class)
-    public void accountNumberException() throws MinimumBalanceException, AccountNumberException {
+    public void accountNumberException() throws InsufficientBalanceException, AccountNumberException {
         Account account = new Account("123-5678", 300);
     }
 
@@ -31,12 +31,12 @@ public class AccountTest {
     }
 
     @Test
-    public void debitAmount() throws MinimumBalanceException {
+    public void debitAmount() throws InsufficientBalanceException {
         assertThat( account.debitAmount(200),is(1300.0));
     }
 
-    @Test(expected = MinimumBalanceException.class)
-    public void minimumBalanceExceptionWithDebit() throws MinimumBalanceException {
+    @Test(expected = InsufficientBalanceException.class)
+    public void minimumBalanceExceptionWithDebit() throws InsufficientBalanceException {
         account.debitAmount(1100);
     }
 
@@ -45,9 +45,9 @@ public class AccountTest {
         assertThat(account.creditAmount(200),is(1700.0));
     }
 
-    @Test(expected = MinimumBalanceException.class)
-    public void checkMinimumBalance() throws MinimumBalanceException, AccountNumberException {
-        Account account = new Account("1234-5678", 300);
+    @Test(expected = InsufficientBalanceException.class)
+    public void checkMinimumBalance() throws InsufficientBalanceException, AccountNumberException {
+        Account account = new Account("1234-5678", 100);
     }
 }
 

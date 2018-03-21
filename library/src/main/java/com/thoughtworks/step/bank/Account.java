@@ -6,16 +6,23 @@ public class Account{
     public final String accountNumber;
     public double balance;
 
-    public Account(String accountNumber,double balance) throws MinimumBalanceException, AccountNumberException {
+    public Account(String accountNumber,double balance) throws InsufficientBalanceException, AccountNumberException {
+        checkAccountNumber(accountNumber);
+        this.accountNumber = accountNumber;
+        checkMinimumBalance(balance);
+        this.balance = balance;
+    }
+
+    public void checkAccountNumber(String accountNumber) throws AccountNumberException {
         if (!(Pattern.matches("\\d{4}-\\d{4}", accountNumber))){
             throw new AccountNumberException();
         }
-        this.accountNumber = accountNumber;
-        if(balance<500){
-            throw new MinimumBalanceException();
-        }
+    }
 
-        this.balance = balance;
+   public void checkMinimumBalance(double balance) throws InsufficientBalanceException {
+        if(balance <500){
+            throw new InsufficientBalanceException();
+        }
     }
 
     public double getBalance() {
@@ -26,10 +33,8 @@ public class Account{
         return accountNumber;
     }
 
-    public double debitAmount(double amount) throws MinimumBalanceException {
-        if(this.balance - amount <500){
-            throw new MinimumBalanceException();
-        }
+    public double debitAmount(double amount) throws InsufficientBalanceException {
+        checkMinimumBalance(this.balance - amount);
         this.balance -= amount;
         return this.balance;
     }
@@ -37,6 +42,5 @@ public class Account{
     public double creditAmount(double amount){
         this.balance += amount;
         return this.balance;
-
     }
 }
