@@ -25,6 +25,11 @@ public class AccountTest {
         Account account = new Account("123-5678", 300);
     }
 
+    @Test(expected = AccountNumberException.class)
+    public void accountNumberExceptionWithCharacter() throws InsufficientBalanceException, AccountNumberException {
+        Account account = new Account("1abh-5678", 300);
+    }
+
     @Test
     public void checkBalance() {
         assertThat(account.getBalance(),is(1500.0));
@@ -37,7 +42,8 @@ public class AccountTest {
 
     @Test(expected = InsufficientBalanceException.class)
     public void minimumBalanceExceptionWithDebit() throws InsufficientBalanceException {
-        account.debitAmount(1100);
+        assertThat( account.getBalance(),is(1500.0));
+        account.debitAmount(1200);
     }
 
     @Test
