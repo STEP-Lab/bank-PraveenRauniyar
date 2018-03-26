@@ -1,6 +1,5 @@
-import com.thoughtworks.step.bank.Account;
-import com.thoughtworks.step.bank.AccountNumberException;
-import com.thoughtworks.step.bank.InsufficientBalanceException;
+package com.thoughtworks.step.bank;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,25 +8,11 @@ import static org.junit.Assert.assertThat;
 
 public class AccountTest {
     private Account account;
+    private AccountNumber accountNumber;
 
     @Before
     public void setup() throws InsufficientBalanceException, AccountNumberException {
-        account = new Account("1234-3456",1500);
-    }
-
-    @Test
-    public void checkAccountNumber(){
-        assertThat(account.getAccountNumber(),is("1234-3456"));
-    }
-
-    @Test(expected = AccountNumberException.class)
-    public void accountNumberException() throws InsufficientBalanceException, AccountNumberException {
-        Account account = new Account("123-5678", 300);
-    }
-
-    @Test(expected = AccountNumberException.class)
-    public void accountNumberExceptionWithCharacter() throws InsufficientBalanceException, AccountNumberException {
-        Account account = new Account("1abh-5678", 300);
+        account = new Account(new AccountNumber("1234-2345"),1500);
     }
 
     @Test
@@ -53,7 +38,7 @@ public class AccountTest {
 
     @Test(expected = InsufficientBalanceException.class)
     public void checkMinimumBalance() throws InsufficientBalanceException, AccountNumberException {
-        Account account = new Account("1234-5678", 100);
+        Account account = new Account(new AccountNumber("1234-5678"), 100);
     }
 }
 

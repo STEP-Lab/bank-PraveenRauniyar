@@ -1,22 +1,13 @@
 package com.thoughtworks.step.bank;
 
-import java.util.regex.Pattern;
-
 public class Account{
-    public final String accountNumber;
+    public final AccountNumber accountNumber;
     public double balance;
 
-    public Account(String accountNumber,double balance) throws InsufficientBalanceException, AccountNumberException {
-        checkAccountNumber(accountNumber);
+    public Account(AccountNumber accountNumber, double balance) throws InsufficientBalanceException, AccountNumberException {
         this.accountNumber = accountNumber;
         checkMinimumBalance(balance);
         this.balance = balance;
-    }
-
-    public void checkAccountNumber(String accountNumber) throws AccountNumberException {
-        if (!(Pattern.matches("\\d{4}-\\d{4}", accountNumber))){
-            throw new AccountNumberException();
-        }
     }
 
    public void checkMinimumBalance(double balance) throws InsufficientBalanceException {
@@ -27,10 +18,6 @@ public class Account{
 
     public double getBalance() {
         return balance;
-    }
-
-    public String getAccountNumber() {
-        return accountNumber;
     }
 
     public double debitAmount(double amount) throws InsufficientBalanceException {
