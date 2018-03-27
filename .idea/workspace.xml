@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7734bf3a-464a-4d29-a4c5-01b2add30f6e" name="Default" comment="Added transaction and transactions class for storing transaction.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/AccountNumber.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/CreditTransaction.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/DebitTransaction.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transaction.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transactions.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/AccountNumberTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/CreditTransactionTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/DebitTransactionTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/TransactionsTest.java" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
+    <list default="true" id="7734bf3a-464a-4d29-a4c5-01b2add30f6e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/library/out/test/classes/AccountTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Account.java" afterPath="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Account.java" />
-      <change beforePath="$PROJECT_DIR$/library/src/test/java/AccountTest.java" afterPath="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/AccountTest.java" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transaction.java" afterPath="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transaction.java" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transactions.java" afterPath="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transactions.java" />
+      <change beforePath="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/CreditTransactionTest.java" afterPath="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/CreditTransactionTest.java" />
+      <change beforePath="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/TransactionsTest.java" afterPath="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/TransactionsTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -54,48 +44,66 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DebitTransaction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/DebitTransaction.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DebitTransactionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/DebitTransactionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <element signature="e#181#182#0" expanded="true" />
-                <element signature="e#220#221#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreditTransaction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/CreditTransaction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="e#183#184#0" expanded="true" />
-                <element signature="e#222#223#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/AccountTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-494">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="336">
+              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transactions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transactions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+              <folding>
+                <element signature="e#182#183#0" expanded="true" />
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionsTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/TransactionsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Assert.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21240">
+              <caret line="921" column="27" lean-forward="false" selection-start-line="921" selection-start-column="27" selection-end-line="921" selection-end-column="27" />
+              <folding>
+                <element signature="e#35031#35032#0" expanded="true" />
+                <element signature="e#35078#35079#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,8 +112,8 @@
       <file leaf-file-name="CreditTransactionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/CreditTransactionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="312">
+              <caret line="13" column="66" lean-forward="false" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,25 +131,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DebitTransactionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/DebitTransactionTest.java">
+      <file leaf-file-name="AccountTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/AccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="60" lean-forward="true" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+            <state relative-caret-position="456">
+              <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/TransactionsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#969#970#0" expanded="true" />
+                <element signature="e#1033#1034#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,14 +150,16 @@
       <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="480">
+              <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#378#379#0" expanded="true" />
                 <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#811#812#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#818#819#0" expanded="true" />
+                <element signature="e#865#866#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,29 +168,10 @@
       <file leaf-file-name="AccountNumberTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/AccountNumberTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-230">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="696">
+              <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transactions.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transactions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#208#209#0" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
-                <marker date="1522060182000" expanded="true" signature="506:873" ph="..." />
               </folding>
             </state>
           </provider>
@@ -818,13 +801,13 @@
         <option value="$PROJECT_DIR$/library/src/test/java/TransactionsTest.java" />
         <option value="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/AccountNumberTest.java" />
         <option value="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/AccountTest.java" />
-        <option value="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/DebitTransactionTest.java" />
-        <option value="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/DebitTransaction.java" />
-        <option value="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/CreditTransactionTest.java" />
         <option value="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/CreditTransaction.java" />
-        <option value="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/TransactionsTest.java" />
+        <option value="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/DebitTransaction.java" />
+        <option value="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/DebitTransactionTest.java" />
+        <option value="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/CreditTransactionTest.java" />
         <option value="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transaction.java" />
         <option value="$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transactions.java" />
+        <option value="$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/TransactionsTest.java" />
       </list>
     </option>
   </component>
@@ -856,6 +839,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -905,14 +890,29 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="bankAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-PraveenRauniyar" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bankAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-PraveenRauniyar" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -950,7 +950,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in library_test (3)">
+  <component name="RunManager" selected="JUnit.TransactionsTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -991,64 +991,69 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CreditTransactionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.thoughtworks.step.bank.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="library_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.thoughtworks.step.bank" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.step.bank.CreditTransactionTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="DebitTransactionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.thoughtworks.step.bank.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="library_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.thoughtworks.step.bank" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.step.bank.DebitTransactionTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TransactionsTest.mustRecordDebitTrasaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="library_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.thoughtworks.step.bank" />
       <option name="MAIN_CLASS_NAME" value="com.thoughtworks.step.bank.TransactionsTest" />
-      <option name="METHOD_NAME" value="mustRecordDebitTrasaction" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TransactionsTest.mustGiveAllTransactionOfSpecificAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.step.bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="library_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.step.bank" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.step.bank.TransactionsTest" />
+      <option name="METHOD_NAME" value="mustGiveAllTransactionOfSpecificAmount" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TransactionsTest.mustRecordDebitTransaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.step.bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="library_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.step.bank" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.step.bank.TransactionsTest" />
+      <option name="METHOD_NAME" value="mustRecordDebitTransaction" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1148,18 +1153,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in library_test (3)" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TransactionsTest.mustRecordDebitTrasaction" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.com.thoughtworks.step.bank in library_test" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DebitTransactionTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CreditTransactionTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.com.thoughtworks.step.bank in library_test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TransactionsTest.mustRecordDebitTransaction" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TransactionsTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TransactionsTest.mustGiveAllTransactionOfSpecificAmount" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in library_test (3)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.com.thoughtworks.step.bank in library_test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CreditTransactionTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DebitTransactionTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TransactionsTest.mustRecordDebitTrasaction" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TransactionsTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in library_test (3)" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TransactionsTest.mustGiveAllTransactionOfSpecificAmount" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.com.thoughtworks.step.bank in library_test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TransactionsTest.mustRecordDebitTransaction" />
       </list>
     </recent_temporary>
   </component>
@@ -1188,7 +1193,10 @@
       <workItem from="1521628140269" duration="66000" />
       <workItem from="1521629162761" duration="1109000" />
       <workItem from="1522044976090" duration="423000" />
-      <workItem from="1522045403094" duration="9846000" />
+      <workItem from="1522045403094" duration="14133000" />
+      <workItem from="1522135490653" duration="157000" />
+      <workItem from="1522155074809" duration="3673000" />
+      <workItem from="1522159235202" duration="1463000" />
     </task>
     <task id="LOCAL-00001" summary="added condition for minimum balance and account number">
       <created>1521552943400</created>
@@ -1204,72 +1212,76 @@
       <option name="project" value="LOCAL" />
       <updated>1521627265269</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added transaction and transactions class for storing transaction.">
+      <created>1522060200352</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1522060200352</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_library_test_(3) - 2018.03.26 at 15h 56m 43s.xml">
+    <history-entry file="All_in_library_test_(3) - 2018.03.27 at 19h 50m 31s.xml">
       <configuration name="All in library_test (3)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_library_test_(3) - 2018.03.26 at 15h 59m 44s.xml">
-      <configuration name="All in library_test (3)" configurationId="JUnit" />
+    <history-entry file="TransactionsTest - 2018.03.27 at 19h 36m 07s.xml">
+      <configuration name="TransactionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_thoughtworks_step_bank_in_library_test - 2018.03.26 at 15h 50m 51s.xml">
-      <configuration name="com.thoughtworks.step.bank in library_test" configurationId="JUnit" />
+    <history-entry file="TransactionsTest - 2018.03.27 at 19h 36m 52s.xml">
+      <configuration name="TransactionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_thoughtworks_step_bank_in_library_test - 2018.03.26 at 15h 51m 44s.xml">
-      <configuration name="com.thoughtworks.step.bank in library_test" configurationId="JUnit" />
+    <history-entry file="TransactionsTest - 2018.03.27 at 19h 37m 22s.xml">
+      <configuration name="TransactionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_thoughtworks_step_bank_in_library_test - 2018.03.26 at 15h 52m 52s.xml">
-      <configuration name="com.thoughtworks.step.bank in library_test" configurationId="JUnit" />
+    <history-entry file="TransactionsTest - 2018.03.27 at 19h 37m 47s.xml">
+      <configuration name="TransactionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_thoughtworks_step_bank_in_library_test - 2018.03.26 at 15h 53m 14s.xml">
-      <configuration name="com.thoughtworks.step.bank in library_test" configurationId="JUnit" />
+    <history-entry file="TransactionsTest - 2018.03.27 at 19h 37m 54s.xml">
+      <configuration name="TransactionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_thoughtworks_step_bank_in_library_test - 2018.03.26 at 15h 53m 53s.xml">
-      <configuration name="com.thoughtworks.step.bank in library_test" configurationId="JUnit" />
+    <history-entry file="TransactionsTest - 2018.03.27 at 19h 50m 06s.xml">
+      <configuration name="TransactionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_thoughtworks_step_bank_in_library_test - 2018.03.26 at 15h 54m 10s.xml">
-      <configuration name="com.thoughtworks.step.bank in library_test" configurationId="JUnit" />
+    <history-entry file="TransactionsTest - 2018.03.27 at 19h 50m 16s.xml">
+      <configuration name="TransactionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_thoughtworks_step_bank_in_library_test - 2018.03.26 at 15h 55m 04s.xml">
-      <configuration name="com.thoughtworks.step.bank in library_test" configurationId="JUnit" />
+    <history-entry file="TransactionsTest - 2018.03.27 at 19h 50m 24s.xml">
+      <configuration name="TransactionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_thoughtworks_step_bank_in_library_test - 2018.03.26 at 15h 55m 59s.xml">
-      <configuration name="com.thoughtworks.step.bank in library_test" configurationId="JUnit" />
+    <history-entry file="TransactionsTest - 2018.03.27 at 19h 54m 40s.xml">
+      <configuration name="TransactionsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28127000" />
+    <option name="totallyTimeSpent" value="37707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="34" width="1608" height="907" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3269461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32814372" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17964073" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881773" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23320895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22263682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1277,6 +1289,9 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881773" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1332,7 +1347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1362,7 +1376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1370,7 +1383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1422,7 +1434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1430,7 +1441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1460,7 +1470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1518,7 +1527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1596,21 +1604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="921" column="27" lean-forward="false" selection-start-line="921" selection-start-column="27" selection-end-line="921" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1619,35 +1612,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/test/java/CreditTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/test/java/Transactions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/test/java/TransactionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/test/java/CreditTransaction.java" />
+    <entry file="file://$PROJECT_DIR$/library/src/test/java/Transactions.java" />
+    <entry file="file://$PROJECT_DIR$/library/src/test/java/TransactionTest.java" />
     <entry file="file://$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1655,7 +1626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1663,73 +1633,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/AccountNumberTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/AccountTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-494">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/CreditTransactionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/DebitTransactionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="60" lean-forward="true" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/TransactionsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/CreditTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="120">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="5" />
           <folding>
             <element signature="e#183#184#0" expanded="true" />
             <element signature="e#222#223#0" expanded="true" />
             <element signature="e#280#281#0" expanded="true" />
             <element signature="e#324#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/DebitTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <element signature="e#181#182#0" expanded="false" />
+            <element signature="e#220#221#0" expanded="false" />
+            <element signature="e#277#278#0" expanded="false" />
+            <element signature="e#319#320#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1742,46 +1670,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/DebitTransaction.java">
+    <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/AccountNumberTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="696">
+          <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
           <folding>
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/AccountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/CreditTransactionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="66" lean-forward="false" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="480">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#378#379#0" expanded="true" />
             <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21240">
+          <caret line="921" column="27" lean-forward="false" selection-start-line="921" selection-start-column="27" selection-end-line="921" selection-end-column="27" />
+          <folding>
+            <element signature="e#35031#35032#0" expanded="true" />
+            <element signature="e#35078#35079#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/DebitTransactionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/src/main/java/com/thoughtworks/step/bank/Transactions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="470">
+          <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/test/java/com/thoughtworks/step/bank/TransactionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <marker date="1522060182000" expanded="true" signature="506:873" ph="..." />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
           </folding>
         </state>
       </provider>

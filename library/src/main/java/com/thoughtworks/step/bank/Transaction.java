@@ -17,19 +17,31 @@ public class Transaction {
     public Date getDate(){
         return date;
     }
-//
+    public double getAmount(){
+        return amount;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Transaction that = (Transaction) o;
         return Double.compare(that.amount, amount) == 0 &&
-                Objects.equals(date, that.date) &&
                 Objects.equals(to, that.to);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(date,amount, to);
+        return Objects.hash(amount, to);
+    }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "date=" + date +
+                ", amount=" + amount +
+                ", to='" + to + '\'' +
+                '}';
     }
 }
+// java.util.currency.data.

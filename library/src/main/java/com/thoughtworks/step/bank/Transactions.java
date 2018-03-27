@@ -1,7 +1,6 @@
 package com.thoughtworks.step.bank;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Transactions {
 
@@ -18,16 +17,26 @@ public class Transactions {
         allTransactions.add(new DebitTransaction(amount,to));
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Transactions that = (Transactions) o;
-        return Objects.equals(allTransactions, that.allTransactions);
+
+    public ArrayList<Transaction> getAllTransactionAboveSpecificLimit(int amount) {
+        Transactions transactions = new Transactions();
+        for (Transaction transaction:allTransactions){
+            if(transaction.getAmount()>amount){
+                transactions.allTransactions.add(transaction);
+
+            }
+        }
+        return transactions.allTransactions;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(allTransactions);
+    public ArrayList<Transaction> getAllTransactionBelowSpecificLimit(int amount) {
+        Transactions transactions = new Transactions();
+        for (Transaction transaction:allTransactions){
+            if(transaction.getAmount()<amount){
+                transactions.allTransactions.add(transaction);
+
+            }
+        }
+        return transactions.allTransactions;
     }
 }
