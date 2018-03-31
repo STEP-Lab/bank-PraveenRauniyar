@@ -21,71 +21,104 @@ public class TransactionsTest {
 
     @Test
     public void mustRecordCreditTransaction() {
-        transactions.credit(2000,"hey");
-        assertThat(transactions.allTransactions,hasItem(new CreditTransaction(new Date(),2000,"hey")));
+        transactions.credit(2000,"hey",3000);
+        CreditTransaction creditTransaction = new CreditTransaction(new Date(),2000,"hey",3000);
+        assertThat(transactions.allTransactions,hasItem(creditTransaction));
     }
 
     @Test
     public void mustRecordDebitTransaction() {
-        transactions.debit(3000,"ashish");
-        assertThat(transactions.allTransactions, hasItem(new DebitTransaction(new Date(),3000,"ashish")));
+        transactions.debit(3000,"ashish",3000);
+        DebitTransaction debitTransaction = new DebitTransaction(new Date(),3000,"ashish",3000);
+        assertThat(transactions.allTransactions, hasItem(debitTransaction));
     }
 
     @Test
     public void mustRecordsDebitAndCredit() {
-        transactions.debit(3000,"ashish");
-        transactions.credit(2000,"hey");
-        assertThat(transactions.allTransactions,hasItems(new DebitTransaction(new Date(),3000,"ashish"),new CreditTransaction(new Date(),2000,"hey")));
+        transactions.debit(3000,"ashish",3000);
+        transactions.debit(3000,"ashish",3000);
+        transactions.credit(2000,"hey",3000);
+        CreditTransaction hey = new CreditTransaction(new Date(),2000,"hey",3000);
+        DebitTransaction ashish = new DebitTransaction(new Date(),3000,"ashish",3000);
+        assertThat(transactions.allTransactions,hasItems(ashish,hey));
     }
 
     @Test
     public void getAllTransactionAboveSpecificLimit() {
-        transactions.debit(3000,"ashish");
-        transactions.debit(500,"hey");
-        transactions.credit(1000,"hoy");
-        DebitTransaction ashish = new DebitTransaction(new Date(),3000,"ashish");
-        Transaction hey = new CreditTransaction(new Date(),1000,"hoy");
-        assertThat(transactions.getAllTransactionAboveSpecificLimit(600),hasItems(ashish,hey));
+        transactions.debit(3000,"ashish",3000);
+        transactions.debit(500,"hey",3000);
+        transactions.credit(1000,"hoy",3000);
+        DebitTransaction ashish = new DebitTransaction(new Date(),3000,"ashish",3000);
+        Transaction hey = new CreditTransaction(new Date(),1000,"hoy",3000);
+        assertThat(transactions.getAllTransactionAboveSpecificLimit(600).allTransactions,hasItems(ashish,hey));
     }
 
     @Test
     public void getAllTransactionBelowSpecificLimit() {
-        transactions.debit(3000,"ashish");
-        transactions.debit(500,"hey");
-        transactions.credit(1000,"hoy");
-        DebitTransaction hey = new DebitTransaction(new Date(),500,"hey");
-        assertThat(transactions.getAllTransactionBelowSpecificLimit(600),hasItems(hey));
+        transactions.debit(3000,"ashish",3000);
+        transactions.debit(500,"hey",3000);
+        transactions.credit(1000,"hoy",3000);
+        DebitTransaction hey = new DebitTransaction(new Date(),500,"hey",3000);
+        assertThat(transactions.getAllTransactionBelowSpecificLimit(600).allTransactions,hasItems(hey));
     }
 
     @Test
     public void getAllDebitTransaction() {
-        transactions.debit(3000,"ashish");
-        transactions.credit(1000,"hoy");
-        transactions.debit(500,"hey");
-        Transaction ashish = new DebitTransaction(new Date(),3000,"ashish");
-        Transaction hey = new DebitTransaction(new Date(),500,"hey");
-        assertThat(transactions.getAllDebitTransaction(),hasItems(ashish,hey));
+        transactions.debit(3000,"ashish",3000);
+        transactions.credit(1000,"hoy",3000);
+        transactions.debit(500,"hey",3000);
+        Transaction ashish = new DebitTransaction(new Date(),3000,"ashish",3000);
+        Transaction hey = new DebitTransaction(new Date(),500,"hey",3000);
+        assertThat(transactions.getAllDebitTransaction().allTransactions,hasItems(ashish,hey));
+    }
+
+    @Test
+    public void getAllCreditTransaction() {
+        transactions.debit(3000,"ashish",3000);
+        transactions.credit(500,"hey",3000);
+        Transaction ashish = new DebitTransaction(new Date(),3000,"ashish",3000);
+        Transaction hey = new CreditTransaction(new Date(),500,"hey",3000);
+        assertThat(transactions.getAllCreditTransaction().allTransactions,hasItems(hey));
     }
 
     @Test
     public void getAllTransactionsBeforeSpecificDate() {
-        transactions.debit(3000,"ashish");
-        transactions.credit(4000,"abhishek");
+        transactions.debit(3000,"ashish",3000);
+        transactions.credit(4000,"abhishek",3000);
         Date date = new Date(2019,10,12);
-        Transaction ashish = new DebitTransaction(new Date(),3000,"ashish");
-        Transaction abhishek = new CreditTransaction(new Date(),4000,"abhishek");
-        assertThat(transactions.getAllTransactionsBeforeSpecificDate(date),hasItems(ashish,abhishek));
+        Transaction ashish = new DebitTransaction(new Date(),3000,"ashish",3000);
+        Transaction abhishek = new CreditTransaction(new Date(),4000,"abhishek",3000);
+        assertThat(transactions.getAllTransactionsBeforeSpecificDate(date).allTransactions,hasItems(ashish,abhishek));
     }
 
     @Test
     public void getAllTransactionAfterSpecificDate() {
-        transactions.debit(1200,"ashish");
-        transactions.credit(1700,"abhishek");
+        transactions.debit(1200,"ashish",3000);
+        transactions.credit(1700,"abhishek",3000);
         Calendar cal = Calendar.getInstance();
         cal.set(2018, Calendar.JANUARY, 9);
         Date date = cal.getTime();
-        Transaction ashish = new DebitTransaction(new Date(),1200,"ashish");
-        Transaction abhishek = new CreditTransaction(new Date(),1700,"abhishek");
-        assertThat(transactions.getAllTransactionsAfterSpecificDate(date),hasItems(abhishek,ashish));
+        Transaction ashish = new DebitTransaction(new Date(),1200,"ashish",3000);
+        Transaction abhishek = new CreditTransaction(new Date(),1700,"abhishek",3000);
+        assertThat(transactions.getAllTransactionsAfterSpecificDate(date).allTransactions,hasItems(abhishek,ashish));
     }
+
+//    @Test
+//    public void threadTest() {
+//        Thread thread = new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                transactions.debit(1200,"ashish",3000);
+//                transactions.credit(1700,"abhishek",3000);
+//            }
+//        });
+//        Thread thread2 = new Thread(new Runnable(){
+//            @Override
+//            public void run() {
+//                transactions.debit(1100,"ashish",3000);
+//            }
+//        });
+//        thread.run();
+//        thread2.run();
+//    }
 }

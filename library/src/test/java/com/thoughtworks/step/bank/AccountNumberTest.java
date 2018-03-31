@@ -27,7 +27,7 @@ public class AccountNumberTest {
         @Test
         public void mustAddTransaction()  {
             Date date = new Date();
-            Transaction transaction =  new Transaction(date,2000,"to");
+            Transaction transaction =  new Transaction(date,2000,"to",4000);
             assertThat(transaction.getDate(),is(date));
         }
     }

@@ -11,7 +11,7 @@ public class CreditTransactionTest {
     @Test
     public void dateMustRecordToTransaction() {
         Date date = new Date();
-        Transaction creditTransaction = new CreditTransaction(2000,"manish");
+        Transaction creditTransaction = new CreditTransaction(2000,"manish",5000);
         assertThat(creditTransaction.getDate(),is(date));
     }
 }

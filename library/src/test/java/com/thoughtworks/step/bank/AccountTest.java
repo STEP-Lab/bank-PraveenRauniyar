@@ -22,18 +22,19 @@ public class AccountTest {
 
     @Test
     public void debitAmount() throws InsufficientBalanceException {
-        assertThat( account.debitAmount(200),is(1300.0));
+        assertThat( account.debitAmount(200,"ashish"),is(1300.0));
     }
 
     @Test(expected = InsufficientBalanceException.class)
     public void minimumBalanceExceptionWithDebit() throws InsufficientBalanceException {
         assertThat( account.getBalance(),is(1500.0));
-        account.debitAmount(1200);
+        account.debitAmount(1200,"amit");
     }
 
     @Test
     public void creditAmount() {
-        assertThat(account.creditAmount(200),is(1700.0));
+        assertThat(account.creditAmount(200,"raghu"),is(1700.0));
+
     }
 
     @Test(expected = InsufficientBalanceException.class)

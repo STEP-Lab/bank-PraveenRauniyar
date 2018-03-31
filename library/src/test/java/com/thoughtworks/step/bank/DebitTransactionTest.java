@@ -11,7 +11,7 @@ public class DebitTransactionTest {
     @Test
     public void dateMustRecordToTransaction() {
         Date date = new Date();
-        Transaction transaction = new DebitTransaction(date,2000,"manish");
+        Transaction transaction = new DebitTransaction(date,2000,"manish",300);
         assertThat(transaction.getDate(),is(date));
     }
 }

@@ -4,15 +4,17 @@ import java.util.Date;
 import java.util.Objects;
 
 public class Transaction {
-    protected final Date date;
-    protected final double amount;
-    protected String to;
+    private final Date date;
+    private final double amount;
+    private String to;
+    private final double currentBalance;
 
 
-    public Transaction(Date date, double amount, String to) {
+    public Transaction(Date date, double amount, String to,double currentBalance) {
         this.date = date;
         this.amount = amount;
         this.to = to;
+        this.currentBalance = currentBalance;
     }
     public Date getDate(){
         return date;
@@ -37,11 +39,10 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "Transaction{" +
-                "date=" + date +
-                ", amount=" + amount +
-                ", to='" + to + '\'' +
-                '}';
+        return
+                date +","+
+                + amount +","+
+                ","+ to + '\'';
     }
 }
 // java.util.currency.data.

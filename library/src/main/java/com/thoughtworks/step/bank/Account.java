@@ -1,8 +1,9 @@
 package com.thoughtworks.step.bank;
 
 public class Account{
-    public final AccountNumber accountNumber;
-    public double balance;
+    private final AccountNumber accountNumber;
+    private double balance;
+    private Transactions transactions = new Transactions();
 
     public Account(AccountNumber accountNumber, double balance) throws InsufficientBalanceException, AccountNumberException {
         this.accountNumber = accountNumber;
@@ -20,14 +21,16 @@ public class Account{
         return balance;
     }
 
-    public double debitAmount(double amount) throws InsufficientBalanceException {
+    public double debitAmount(double amount,String source) throws InsufficientBalanceException {
         checkMinimumBalance(this.balance - amount);
         this.balance -= amount;
+        transactions.debit(amount,source,this.balance);
         return this.balance;
     }
 
-    public double creditAmount(double amount){
+    public double creditAmount(double amount,String source){
         this.balance += amount;
+        transactions.credit(amount,source,this.balance);
         return this.balance;
     }
 }
